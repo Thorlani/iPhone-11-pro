@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(232, 232, 232);
+  font-size: 18px;
 }
 
 .canvas-container {
@@ -30,7 +37,7 @@ nav {
 }
 
 ul {
-  width: 30%;
+  width: 40%;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -256,4 +263,9 @@ button {
   border-radius: 10px;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+}
+
+
+@media (max-width: 767px ){
+
 }
