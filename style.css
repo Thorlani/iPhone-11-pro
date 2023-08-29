@@ -27,7 +27,7 @@ nav {
   position: relative;
   z-index: 2;
   width: 100%;
-  background-color: rgb(26, 25, 25);
+  background-color: #51685d;
   color: rgb(232, 232, 232);
   display: flex;
   justify-content: space-between;
@@ -143,8 +143,9 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: #51685d;
   padding: 4% 8%;
+  color: #ffffff;
 }
 
 .fifth div {
@@ -265,7 +266,126 @@ button {
   cursor: pointer;
 }
 
+.video-text {
+  position: relative;
+  z-index: 3;
+  background-color: #fafafa;
+}
 
-@media (max-width: 767px ){
+.menu-icon {
+  display: none;
+}
 
+.menu-icon div {
+  width: 24px;
+  height: 2px;
+  background-color: antiquewhite;
+  margin-top: 5px;
+  transition: all 0.5s ease;
+}
+
+.mobile {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999999999;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: brown;
+  transform: translateX(-101%);
+  transition: all 0.4s ease;
+  padding-top: 4rem;
+}
+
+@media (max-width: 830px) {
+  .canvas-container {
+    position: relative;
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon-active .top {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .menu-icon-active .middle {
+    opacity: 0;
+  }
+
+  .menu-icon-active .bottom {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  section {
+    height: 100%;
+  }
+
+  .herosection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
+
+  .herosection div {
+    width: 100%;
+  }
+  .herosection h1 {
+    max-width: 600px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .second {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
+  .second div {
+    width: 100%;
+  }
+  .third {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 4%;
+  }
+  .third div {
+    width: 100%;
+  }
+  .fourth {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
+  .fourth div {
+    width: 100%;
+  }
+
+  .fifth {
+    padding: 8%;
+  }
+  .six {
+    padding: 8%;
+  }
 }
