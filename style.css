@@ -279,7 +279,7 @@ button {
 .menu-icon div {
   width: 24px;
   height: 2px;
-  background-color: antiquewhite;
+  background-color: #ffffff;
   margin-top: 5px;
   transition: all 0.5s ease;
 }
@@ -288,32 +288,26 @@ button {
   display: none;
 }
 
-.navbar {
-  position: fixed;
-  z-index: 999999999;
-  left: 0px;
-  top: 0px;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: brown;
-  transform: translateX(-101%);
-  transition: all 0.4s ease;
-  padding-top: 4rem;
-}
-
 @media (max-width: 830px) {
   .canvas-container {
     position: relative;
     display: none;
   }
+
+  .hamburger-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    font-family: "Inter", sans-serif;
+  }
+
   .mobile {
     display: block;
   }
-  ul {
+
+  nav ul {
     display: none;
   }
 
@@ -387,5 +381,15 @@ button {
   }
   .six {
     padding: 8%;
+  }
+  footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    margin-left: -10px;
   }
 }
